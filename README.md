@@ -19,8 +19,8 @@ Proyek ini melakukan **Optical Character Recognition (OCR)** pada pelat nomor ke
 ## 2. Struktur Folder
 
 ```
-project-root/
-├── main.py                                  # skrip utama inferensi + evaluasi
+RE604_Muzammil-AAS/
+├── ocr_vlm.py                                  # skrip utama inferensi + evaluasi
 ├── hasil_evaluasi_ocr_lmstudio.csv           # hasil OCR + skor CER per gambar
 ├── README.md
 └── Indonesian License Plate Recognition Dataset/
@@ -30,8 +30,6 @@ project-root/
     └── labels/
         └── test/                            # label YOLO (.txt) sebagai ground truth
 ```
-
-> **Catatan:** nama folder dataset, nama file skrip (`main.py`), dan nama file CSV mengikuti konfigurasi di bagian atas skrip (`DATASET_BASE`, `OUTPUT_CSV`). Sesuaikan jika struktur folder Anda berbeda.
 
 ## 3. Prasyarat (Requirements)
 
@@ -44,7 +42,6 @@ project-root/
 
 ```bash
 pip install requests
-# opsional, hanya jika ingin menggunakan fallback OCR
 pip install easyocr
 ```
 
@@ -93,7 +90,7 @@ PROMPT = "Extract the license plate number from this image. Output only the alph
 2. Jalankan skrip dari root proyek:
 
    ```bash
-   python main.py
+   python ocr_vlm.py
    ```
 
 3. Saat dijalankan, program akan melakukan hal-hal berikut secara berurutan:
@@ -203,4 +200,4 @@ Pada kasus-kasus ini, prediksi VLM nyaris tidak memiliki kemiripan karakter deng
 
 ## 12. Lisensi & Atribusi
 
-Dataset yang digunakan adalah **Indonesian License Plate Recognition Dataset**, dan model VLM yang digunakan adalah **Moondream2**, dijalankan secara lokal melalui **LM Studio**. Proyek ini dibuat untuk keperluan tugas/penelitian akademik.
+Dataset yang digunakan adalah **Indonesian License Plate Recognition Dataset**, dan model VLM yang digunakan adalah **Moondream2**, dijalankan secara lokal melalui **LM Studio**. Proyek ini dibuat untuk lebih memahami pengaplikasian VLM serta tugas akhir semester.
