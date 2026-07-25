@@ -1,3 +1,6 @@
+# Nama: M Muzammil Aditya Putra (4222301055)
+# Kelas: 6B-Pagi (Robotika)
+
 # Indonesian License Plate OCR using Vision-Language Model (LM Studio + Moondream2)
 
 Proyek ini melakukan **Optical Character Recognition (OCR)** pada pelat nomor kendaraan Indonesia menggunakan **Vision-Language Model (VLM)** yang dijalankan secara lokal melalui **LM Studio**, kemudian mengevaluasi hasilnya dengan metrik **Character Error Rate (CER)**.
