@@ -1,0 +1,7 @@
+Total plat diproses : 197
+Rata-rata CER       : 0.3689
+Exact match         : 60
+Accuracy (exact)    : 30.5 persen
+Model               : moondream-2b-2025-04-14
+Jumlah CER <= 0.5 (berhasil): 131 (66.5 persen)
+Jumlah CER > 0.5 (gagal)   : 66 (33.5 persen)
